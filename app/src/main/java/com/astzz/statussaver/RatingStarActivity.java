@@ -10,5 +10,6 @@ public class RatingStarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rating_star);
+
     }
 }

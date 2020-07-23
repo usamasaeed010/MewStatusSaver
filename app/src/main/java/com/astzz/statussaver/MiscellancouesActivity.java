@@ -15,7 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.astzz.statussaver.helper.AppPerferencesManager;
 
-public class miscellancouesActivituy extends AppCompatActivity {
+public class MiscellancouesActivity extends AppCompatActivity {
 
     AppPerferencesManager appPerferencesManager;
 

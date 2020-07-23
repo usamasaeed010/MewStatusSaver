@@ -8,13 +8,13 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.astzz.statussaver.Adopter.PagerAdopter;
 import com.astzz.statussaver.helper.AppPerferencesManager;
 import com.astzz.statussaver.model.Typcastregular;
 
 import android.view.View;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -23,18 +23,17 @@ import android.view.MenuItem;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 import androidx.core.widget.ImageViewCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
-import android.view.Menu;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -75,6 +74,11 @@ public class MainActivity extends AppCompatActivity
         Typcastregular.Typcastregular(getApplicationContext(), "serif", "Sitka Small Bold.ttf");
         setContentView(R.layout.activity_main);
 
+        ViewPager viewPager = findViewById(R.id.viewPAger);
+        TabLayout tabLayout = findViewById(R.id.tabLayoutSlider);
+
+        viewPager.setAdapter(new PagerAdopter(getSupportFragmentManager()));
+        tabLayout.setupWithViewPager(viewPager);
 
         status = findViewById(R.id.status);
         status.setOnClickListener(this);
@@ -171,7 +175,7 @@ public class MainActivity extends AppCompatActivity
             getSharedPreferences("usama", MODE_PRIVATE).edit().putString("chk", "wb").apply();
             onBa();
         } else if (id == R.id.settings) {
-            Intent settingPage = new Intent(this, miscellancouesActivituy.class);
+            Intent settingPage = new Intent(this, MiscellancouesActivity.class);
             startActivity(settingPage);
 
         } else if (id == R.id.Rate_us) {
