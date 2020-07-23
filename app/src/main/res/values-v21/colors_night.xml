@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+
+    <color name="black">#000000</color>
+
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="yellow">#FFB243</color>
+
+    <color name="colorRed">#EE0D0D</color>
+
+    <!--For Night Mode -->
+    <color name="colorPrimaryNight">#000000</color>
+    <color name="colorPrimaryDarkNight">#000000</color>
+    <color name="colorAccentNight">#D81B60</color>
+
+    <!--Extra color -->
+
+    <color name="primaryText">#000000</color>
+    <color name="SecondaryText">#000000</color>
+
+    <color name="primaryTextNight">#FFFFFF</color>
+    <color name="SecondaryNight">#CBCBCB</color>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

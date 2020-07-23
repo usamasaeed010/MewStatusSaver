@@ -1,21 +1,55 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
+        <item name="CustomBackgroundColor">#FFFFFF</item>
+        <item name="CustomTextColor">@color/primaryText</item>
+        <item name="CustomSecondaryTextColor">@color/SecondaryText</item>
     </style>
 
-    <style name="customfontstyle" parent="@android:style/TextAppearance.Small">
-        <item name="android:fontFamily">@font/Sitka_ Small_Bold</item>
-    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--DarkNightTheme-->
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
+        <item name="colorAccent">@color/colorAccentNight</item>
+
+        <item name="CustomBackgroundColor">@color/colorPrimaryNight</item>
+        <item name="CustomTextColor">@color/primaryTextNight</item>
+        <item name="CustomSecondaryTextColor">@color/SecondaryNight</item>
+    </style>
+
+    <style name="AppThemeDark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="NgWindowTitleStyle" parent="android:TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:background">#000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="DarkNight" parent="Theme.AppCompat.DayNight">
+    </style>
+
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="declare_name">
+        <attr name="CustomBackgroundColor" format="color"/>
+        <attr name="CustomTextColor" format="color"/>
+        <attr name="CustomSecondaryTextColor" format="color"/>
+    </declare-styleable>
+    
+    
+</resources>
